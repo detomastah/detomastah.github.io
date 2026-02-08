@@ -53,3 +53,5 @@ monitor.alsa.rules = [
 ]
 ```
 
+10. Execute `systemctl --user restart wireplumber`
+11. Check if there were no errors with `journalctl --user-unit wireplumber -b`. If no errors, latency should be compensated.
